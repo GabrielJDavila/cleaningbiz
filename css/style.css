@@ -25,6 +25,7 @@ footer {
   padding-left: 10px;
   text-align: center;
   font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
 }
 
 nav {
@@ -37,6 +38,10 @@ nav.show {
     display: flex;
     flex-direction: column;
     background-color: dimgrey;
+}
+
+.hide {
+  display: none;
 }
 
 .nav-item {
@@ -53,6 +58,7 @@ nav.show {
   margin-top: auto;
   margin-left: auto;
   padding: 12px;
+  font-size: 45px !important;
 }
 
 .material-symbols-outlined:hover {
@@ -68,6 +74,7 @@ nav.show {
   text-align: center;
   background: #1d3030;
   padding-bottom: 4px;
+  font-size: 1.5em;
 }
 
 .hero-container {
@@ -85,7 +92,7 @@ nav.show {
   text-align: center;
   font-family: 'Nunito', sans-serif;
   font-size: 4em;
-  color: white;
+  color: black;
 }
 
 .scroll-down {
@@ -96,6 +103,7 @@ nav.show {
   color: white;
   font-family: 'Nunito', sans-serif;
   border: 2px #1d3030;
+  font-size: 2rem;
 }
 
 .scroll-down:hover {
@@ -112,25 +120,28 @@ nav.show {
   font-family: 'Nunito', sans-serif;
 }
 
-.abput-title,
+.about-title,
 .about-discrip {
   margin: auto;
   justify-content: center;
   width: 50vw;
 }
 
+.about-title,
 .services-title {
   text-align: center;
   font-family: 'Nunito', sans-serif;
+  font-size: 3rem;
 }
 
 .services-list {
   display: grid;
-  grid-template-columns: 200px;
+  grid-template-columns: repeat(2, 200px);
   grid-gap: 10px;
   justify-content: center;
   text-align: center;
   font-family: 'Nunito', sans-serif;
+  font-size: 2rem;
 }
 
 .service-item {
@@ -172,6 +183,17 @@ footer {
 
   .nav-item {
     padding: 0 10px 0 4px;
+  }
+
+  .biz-title {
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: center;
+  }
+
+  span {
+    display: none !important;
   }
 
   .services-list {
