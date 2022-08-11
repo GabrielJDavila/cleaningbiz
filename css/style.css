@@ -14,9 +14,16 @@ body {
 header,
 footer {
   font-family: 'Nunito', sans-serif;
-  background: darkslategrey;
+  background: lightblue;
   color: white;
   text-align: center;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  width: 100%;
 }
 
 .site-title-container {
@@ -49,7 +56,7 @@ nav.show {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background: #1d3030;
+    background: dodgerblue;
     font-size: 2.7rem;
 }
 
@@ -81,7 +88,7 @@ nav.show {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 25px 0 25px 0;
+  padding: 200px 0 25px 0;
 }
 
 .hero-span {
@@ -110,6 +117,33 @@ nav.show {
   opacity: 85%;
   transition: all 0.3s ease;
 }
+
+/* .sticky-container {
+  background: lightblue;
+  padding: 30px;
+  position: sticky;
+}
+
+.sticky-btn {
+  font-size: 2.5em;
+  font-family: 'Nunito', sans-serif;
+  border-radius: 5px;
+}
+
+.sticky-text {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+}
+
+.sticky-phone {
+  font-size: 2.5em;
+  font-family: 'Nunito', sans-serif;
+  text-decoration: underline;
+  font-weight: bold;
+  color: white;
+} */
 
 .main-section {
   display: flex;
@@ -167,17 +201,18 @@ a:hover {
 
 .carousel {
   position: relative;
-  width: 80%;
+  width: 85%;
+  height: 100%;
   margin: auto;
 }
 
 .carousel-item {
-  height: 300px;
+  height: 400px;
   background: grey;
   padding: 1em;
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 3em;
   color: white;
   width: 100%;
   display: none;
@@ -198,9 +233,9 @@ a:hover {
 
 .carousel-button {
   border-radius: 50%;
-  height: 15px;
-  width: 10px;
-  margin: 0 5px;
+  height: 55px;
+  width: 50px;
+  margin: 0 40px;
   background: rgba(255, 255, 255, 0.2);
   border: none;
   cursor: pointer;
@@ -208,4 +243,45 @@ a:hover {
 
 .carousel-button-selected {
   background: rgba(255, 255, 255, 0.5);
+}
+
+.sticky-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: lightblue;
+  padding: 30px;
+  position: sticky;
+  bottom: 0;
+  align-items: center;
+}
+
+.sticky-btn {
+
+  font-size: 2.5em;
+  font-family: 'Nunito', sans-serif;
+  border-radius: 5px;
+  width: 35%;
+  border: none;
+}
+
+.sticky-btn:hover {
+  background: dodgerblue;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.sticky-text {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+}
+
+.sticky-phone {
+  font-size: 2.5em;
+  font-family: 'Nunito', sans-serif;
+  text-decoration: underline;
+  font-weight: bold;
+  color: white;
 }
