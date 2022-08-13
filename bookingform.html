@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>M&G EcoCleaning LLC</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Nunito:wght@300&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+
+  <header>
+    <div class="site-title-container">
+      <h1 class="biz-title">M&G Clean Pros</h1>
+      <span class="material-symbols-outlined md-24">Menu</span>
+    </div>
+    <nav>
+      <a href="index." class="nav-item">Home</a>
+      <a href="#about" class="nav-item">About</a>
+      <a href="#services" class="nav-item">Services</a>
+      <a href="#gallery" class="nav-item">Gallery</a>
+      <a href="#reviews" class="nav-item">Reviews</a>
+      <a href="#contact" class="nav-item">Contact</a>
+    </nav>
+
+  </header>
+
+  <form action="" method="post" class="form-container">
+    <fieldset class="basic-info-container">
+      <legend><h2 class="basic-info">Your Basic Info</h2></legend>
+
+      <label for="name" class="label-title"> Full Name:</label>
+      <input type="text" id="name" name="user_name">
+
+      <label for="email" class="label-title">Email:</label>
+      <input type="email" id="email" name="user_email">
+
+      <label for="phone" class="label-title">Phone number:</label>
+      <input type="tel" id="phone" name="user_phone">
+
+    </fieldset>
+
+    <fieldset class="job-info-container">
+      <legend><h2 class="job-info">Tell Us About The Job</h2></legend>
+
+      <label for="address" class="label-title">Address:</label>
+      <input type="text" id="address" name="user_address">
+
+      <label for="service" class="label-title">Pick Your Service</label>
+      <select id="service" name="service" class="select-menu">
+        <option value="move_cleaning">move in/move out cleaning</option>
+        <option value="office_cleaning">office cleaning</option>
+        <option value="gym_cleaning">gym cleaning</option>
+      </select>
+
+      <label for="squareft" class="label-title">Square Ft</label>
+      <input type="text" id="squareft" name="squareft">
+
+    <fieldset class="job-frequency">
+      <legend><h3>How Often Would You Like The Job Done?</h3></legend>
+      <input type="radio" id="weekly" name="frequency_clean">
+      <label for="weekly" class="label-title">Weekly</label>
+      <input type="radio" id="bi-weekly" name="frequency_clean">
+      <label for="bi-weekly" class="label-title">Bi-weekly</label>
+      <input type="radio" id="monthly" name="frequency_clean">
+      <label for="monthly" class="label-title">Monthly</label>
+    </fieldset>
+    </fieldset>
+  </form>
+
+  <div class="estimate">
+    <h3>Calculating Cost:</h3>
+  </div>
+  
+  <footer>2022 M&G EcoCleaning LLC</footer>
+  <script src="js/site.js"></script>
+</body>
+</html>
