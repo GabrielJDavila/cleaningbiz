@@ -312,6 +312,7 @@ nav.show {
   width: 90%;
   margin: 5em auto 2em;
   border-radius: 6px;
+  margin-bottom: 50px;
 }
 
 .basic-info-container,
@@ -332,7 +333,9 @@ option,
 input {
   background-color: lavender;
   text-align: center;
-  height: 2.5em;
+  border-radius: 3px;
+  text-align: left;
+  font-size: 1em;
 }
 
 .select-menu {
@@ -340,16 +343,62 @@ input {
   font-size: 3rem;
 }
 
+.cost-container {
+  display: flex;
+  justify-content: center;
+}
+
+.dollar-sign {
+  font-size: 1em;
+  font-family: 'Nunito', sans-serif;
+  color: green;
+  font-weight: bold;
+}
+
 .job-frequency {
+  background: white;
+  display: flex;
+  flex-direction: column;
 }
 
 input[type='radio'] {
   transform: scale(3);
-  margin: 0 2em;
+  margin: 0;
+  width: 1em;
 }
 
-.estimate {
+.submit-btn {
+  font-size: 1.2em;
+  background-color: dodgerblue;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 6px;
+  color: white;
+}
+
+.submit-btn:hover {
+  background: lightblue;
+  font-weight: bold;
+}
+
+.estimate-btn {
   font-family: 'Nunito', sans-serif;
   text-align: center;
-  font-size: 3em;
+  font-size: 1.2em;
+  background: dodgerblue;
+  color: white;
+  border-radius: 6px;
+}
+
+.estimate-title {
+  margin: 0;
+}
+
+.cost {
+  margin-top: 10px;
+  font-weight: bold;
+  color: green;
+  font-size: 2em;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
 }
