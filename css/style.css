@@ -7,7 +7,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: lavender;
+  background-color: white;
   font-size: 20px;
 }
 
@@ -193,6 +193,7 @@ nav.show {
   color: white;
   background: rgba(255, 45, 0, 0.3);
   margin-top: 0;
+  padding: 0 12px;
 }
 
 .service-link {
@@ -200,7 +201,8 @@ nav.show {
   color: black;
   padding: 0 30px;
   text-decoration: none;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+  font-family: 'Nunito', sans-serif;
 }
 
 .service-link:hover {
@@ -209,6 +211,15 @@ nav.show {
   background: white;
   color: black;
   transition: all 0.3s ease;
+}
+
+.service-description-1,
+.service-description-2,
+.service-description-3 {
+  background: rgba(0, 0, 0, 0.5);
+  margin: 0 1em;
+  padding: 12px;
+  border-radius: 6px;
 }
 
 .carousel {
@@ -336,6 +347,10 @@ input {
   border-radius: 3px;
   text-align: left;
   font-size: 1em;
+}
+
+input:required {
+  border: solid 2px red;
 }
 
 .select-menu {
