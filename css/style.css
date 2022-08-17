@@ -7,14 +7,14 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: lavender;
+  background-color: white;
   font-size: 20px;
 }
 
 header,
 footer {
   font-family: 'Nunito', sans-serif;
-  background: lightblue;
+  background: maroon;
   color: white;
   text-align: center;
 }
@@ -56,12 +56,19 @@ nav.show {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background: dodgerblue;
+    background: #660000;
     font-size: 2.7rem;
 }
 
+.nav-item {
+  color: white;
+  text-decoration: none;
+}
+
 .nav-item:hover {
-  background: cornflowerblue;
+  background: white;
+  color: black;
+  font-weight: bold;
   padding: 3px 5px;
   border-radius: 5px;
   transition: all 0.3s ease;
@@ -103,47 +110,20 @@ nav.show {
   margin: auto;
   padding: 12px 8px;
   width: 50%;
-  background: cornflowerblue;
+  background: lavender;
   border-radius: 6px;
-  color: white;
+  color: black;
   font-family: 'Nunito', sans-serif;
   border: 2px #1d3030;
   font-size: 3rem;
 }
 
 .scroll-down:hover {
-  background: #3271e7;
+  background: white;
   box-shadow: 0px 2px 2px 2px #1d3030;
   opacity: 85%;
   transition: all 0.3s ease;
 }
-
-/* .sticky-container {
-  background: lightblue;
-  padding: 30px;
-  position: sticky;
-}
-
-.sticky-btn {
-  font-size: 2.5em;
-  font-family: 'Nunito', sans-serif;
-  border-radius: 5px;
-}
-
-.sticky-text {
-  font-family: 'Nunito', sans-serif;
-  font-size: 1.5em;
-  font-weight: bold;
-  color: white;
-}
-
-.sticky-phone {
-  font-size: 2.5em;
-  font-family: 'Nunito', sans-serif;
-  text-decoration: underline;
-  font-weight: bold;
-  color: white;
-} */
 
 .main-section {
   display: flex;
@@ -179,24 +159,67 @@ nav.show {
 }
 
 .service-item {
-  background: cornflowerblue;
-  padding: 20px;
+  padding-bottom: 20px;
   font-size: 5rem;
   border-radius: 5px;
+  color: white;
 }
 
-a {
+.s-1,
+.s-2,
+.s-3 {
+
+}
+
+.s-1 {
+  background: url(../img/cleaning4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.s-2 {
+  background: url(../img/cleaning6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.s-3 {
+  background: url(../img/cleaning5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.service-item-title {
+  color: white;
+  background: rgba(255, 45, 0, 0.3);
+  margin-top: 0;
+  padding: 0 12px;
+}
+
+.service-link {
+  background-color: white;
   color: black;
+  padding: 0 30px;
   text-decoration: none;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+  font-family: 'Nunito', sans-serif;
 }
 
-a:hover {
+.service-link:hover {
   padding: 4px;
   border-radius: 4px;
-  background: #1d3030;
-  color: white;
+  background: white;
+  color: black;
   transition: all 0.3s ease;
+}
+
+.service-description-1,
+.service-description-2,
+.service-description-3 {
+  background: rgba(0, 0, 0, 0.5);
+  margin: 0 1em;
+  padding: 12px;
+  border-radius: 6px;
 }
 
 .carousel {
@@ -245,11 +268,46 @@ a:hover {
   background: rgba(255, 255, 255, 0.5);
 }
 
+.underline {
+  border-bottom: solid 2px darkgrey;
+  width: 50%;
+  text-align: center;
+  margin: 1em auto;
+}
+
+.review {
+  margin: 0 1em;
+  background: lightgrey;
+  padding: 1em;
+  border-radius: 12px;
+}
+
+#person-img {
+  border-radius: 45%;
+}
+
+#author,
+#service-reviewed,
+#review-info {
+  font-family: 'Nunito', sans-serif;
+  margin: .5em .7em;
+}
+
+.prev-btn,
+.next-btn {
+  font-size: 1.5em;
+  padding: 0 12px;
+}
+
+.prev-btn {
+  margin-right: 1em;
+}
+
 .sticky-container {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background: lightblue;
+  background: maroon;
   padding: 30px;
   position: sticky;
   bottom: 0;
@@ -263,11 +321,14 @@ a:hover {
   border-radius: 5px;
   width: 35%;
   border: none;
+  background: lavender;
+  text-decoration: none;
 }
 
 .sticky-btn:hover {
-  background: dodgerblue;
+  background: white;
   border: none;
+  font-weight: bold;
   transition: all 0.3s ease;
 }
 
@@ -284,4 +345,110 @@ a:hover {
   text-decoration: underline;
   font-weight: bold;
   color: white;
+}
+
+/* Booking page styles */
+
+.form-container {
+  margin-top: 6em;
+  font-size: 3em;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  width: 90%;
+  margin: 5em auto 2em;
+  border-radius: 6px;
+  margin-bottom: 50px;
+}
+
+.basic-info-container,
+.job-info-container {
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.basic-info,
+.job-info,
+.label-title,
+option,
+.job-frequency {
+  font-family: 'Nunito', sans-serif;
+}
+
+input {
+  background-color: lavender;
+  text-align: center;
+  border-radius: 3px;
+  text-align: left;
+  font-size: 1em;
+}
+
+input:required {
+  border: solid 2px red;
+}
+
+.select-menu {
+  width: 50%;
+  font-size: 3rem;
+}
+
+.cost-container {
+  display: flex;
+  justify-content: center;
+}
+
+.dollar-sign {
+  font-size: 1em;
+  font-family: 'Nunito', sans-serif;
+  color: green;
+  font-weight: bold;
+}
+
+.job-frequency {
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type='radio'] {
+  transform: scale(3);
+  margin: 0;
+  width: 1em;
+}
+
+.submit-btn {
+  font-size: 1.2em;
+  background-color: dodgerblue;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 6px;
+  color: white;
+}
+
+.submit-btn:hover {
+  background: lightblue;
+  font-weight: bold;
+}
+
+.estimate-btn {
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  font-size: 1.2em;
+  background: dodgerblue;
+  color: white;
+  border-radius: 6px;
+}
+
+.estimate-title {
+  margin: 0;
+}
+
+.cost {
+  margin-top: 10px;
+  font-weight: bold;
+  color: green;
+  font-size: 2em;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
 }
