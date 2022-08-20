@@ -99,16 +99,17 @@ const info = document.getElementById('review-info');
 
 const prevBtn = document.querySelector('.prev-btn');
 const nxtBtn = document.querySelector('.next-btn');
+const randomBtn = document.querySelector('.random-btn');
 let currentItem = 0;
 
 //load initial items
-window.addEventListener("DOMContentLoaded", function () {
-  showReview(currentItem)
+window.addEventListener("DOMContentLoaded", () => {
+  showReview()
 });
 
 // show review based on item
-function showReview(person) {
-  const item = reviews[person];
+function showReview() {
+  const item = reviews[currentItem];
   img.src = item.img;
   author.textContent = item.name;
   job.textContent = item.job;
@@ -118,10 +119,21 @@ function showReview(person) {
 // show next review
 nxtBtn.addEventListener('click', () => {
   currentItem++;
-  showReview(currentItem);
+  if(currentItem > reviews.length - 1) {
+    currentItem = 0;
+  }
+  showReview();
 });
 
 prevBtn.addEventListener('click', () => {
-  currentItem --;
-  showReview(currentItem);
+  currentItem--;
+  if(currentItem < 0) {
+    currentItem = reviews.length - 1;
+  }
+  showReview();
+});
+
+randomBtn.addEventListener('click', () => {
+  currentItem = Math.floor(Math.random() * reviews.length);
+  showReview();
 });

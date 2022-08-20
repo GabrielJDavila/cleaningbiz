@@ -134,6 +134,10 @@ nav.show {
 .section-title {
   font-family: 'Nunito', sans-serif;
   font-size: 5rem;
+  border-bottom: solid 2px darkgrey;
+  width: 50%;
+  text-align: center;
+  margin: 1em auto;
 }
 
 .about-section {
@@ -301,6 +305,13 @@ nav.show {
 
 .prev-btn {
   margin-right: 1em;
+}
+
+.random-btn {
+  margin-top: .5em;
+  padding: .5em;
+  font-size: .8em;
+  font-family: 'Nunito', sans-serif;
 }
 
 .sticky-container {
