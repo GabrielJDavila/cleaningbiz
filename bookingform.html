@@ -48,30 +48,89 @@
       <label for="address" class="label-title">Address:</label>
       <input type="text" id="address" name="user_address" required>
 
-      <label for="service" class="label-title">Pick Your Service</label>
-      <select id="service" name="service" class="select-menu" required>
-        <option value="move_cleaning">move in/move out cleaning</option>
-        <option value="office_cleaning">office cleaning</option>
-        <option value="gym_cleaning">gym cleaning</option>
-      </select>
+      <label id="cleaning-type" class="label-title">Type of Cleaning:</label>
+      <div class="radio-btn-container">
+        <input type="radio" id="residential" name="cleaning_type">
+        <label for="residential" class="label-title">Residential</label>
+      </div>
+      <div class="radio-btn-container">
+        <input type="radio" id="commercial" name="cleaning_type">
+        <label for="commercial" class="label-title">Commercial</label>
+      </div>
 
-      <label for="squareft" class="label-title">Square Ft</label>
-      <input type="text" id="squareft" name="squareft" required>
-      <button type="button" class="estimate-btn">Estimate your price</button>
-      <div class="cost-container">
-        <p class="dollar-sign">$</p>
-        <p class="cost">...</p>
+      <div class="residential-cleaning hide">
+        <label for="service" class="label-title">Pick Your Service:</label>
+        <select id="service" name="service" class="select-menu" required>
+          <option value="general-clean">general clean - $90</option>
+          <option value="deep-clean">deep clean - $150</option>
+        </select>
+        <label for="bedrooms" class="label-title bdrm-title">Bedrooms:</label>
+        <select id="bedrooms" name="bedrooms" class="select-menu" required>
+          <option value="1bd">1bd - $25</option>
+          <option value="2bd">2bd - $50</option>
+          <option value="3bd">3bd - $75</option>
+          <option value="4bd">4bd+ - $100</option>
+        </select>
+        <label for="bathrooms" class="label-title btrm-title">Bathrooms:</label>
+        <input type="text" id="bathrooms" name="bathrooms">
+        <p class="label-title ap-title">Appliances:</p>
+        <div class="appliance-container">
+          <div class="fridge-container">
+            <input type="checkbox" id="appliance1" name="appliance1" value="Fridge">
+            <label for="appliance1" class="label-title">Fridge - $20</label>
+          </div>
+          <div class="stove-container">
+            <input type="checkbox" id="appliance2" name="appliance2" value="Stove">
+            <label for="appliance2" class="label-title">Stove - $15</label>
+          </div>
+          <div class="micro-container">
+            <input type="checkbox" id="appliance3" name="appliance3" value="Microwave">
+            <label for="appliance3" class="label-title">Microwave - $10</label>
+          </div>
+        </div>
+        <button type="button" class="res-estimate-btn">Estimate your price</button>
+        <div class="cost-container">
+          <p class="dollar-sign">$</p>
+          <p class="cost">...</p>
+        </div>
+      </div>
+
+      <div class="commercial-cleaning hide">
+        <label for="service" class="label-title">Pick Your Service:</label>
+        <select id="service" name="service" class="select-menu" required>
+          <option value="move_cleaning">move in/move out cleaning</option>
+          <option value="office_cleaning">office cleaning</option>
+          <option value="gym_cleaning">gym cleaning</option>
+        </select>
+        <label for="com-clean-type" class="label-title">Pick Your Clean:</label>
+        <select id="com-clean-type" name="com-clean-type" class="select-menu" required>
+          <option value="general-clean">general clean - $.20/sqft</option>
+          <option value="deep-clean">deep clean - $.25/sqft</option>
+        </select>
+        <label for="squareft" class="label-title">Square Ft</label>
+        <input type="text" id="squareft" name="squareft" required>
+        <button type="button" class="com-estimate-btn">Estimate your price</button>
+        <div class="cost-container">
+          <p class="dollar-sign">$</p>
+          <p class="com-cost">...</p>
+        </div>
       </div>
     </fieldset>
 
     <fieldset class="job-frequency">
       <legend><h3>How Often Would You Like The Job Done?</h3></legend>
-      <input type="radio" id="weekly" name="frequency_clean">
-      <label for="weekly" class="label-title">Weekly</label>
-      <input type="radio" id="bi-weekly" name="frequency_clean">
-      <label for="bi-weekly" class="label-title">Bi-weekly</label>
-      <input type="radio" id="monthly" name="frequency_clean">
-      <label for="monthly" class="label-title">Monthly</label>
+      <div class="radio-btn-container">
+        <input type="radio" id="weekly" name="frequency_clean">
+        <label for="weekly" class="label-title">Weekly</label>
+      </div>
+      <div class="radio-btn-container">
+        <input type="radio" id="bi-weekly" name="frequency_clean">
+        <label for="bi-weekly" class="label-title">Bi-weekly</label>
+      </div>
+      <div class="radio-btn-container">
+        <input type="radio" id="monthly" name="frequency_clean">
+        <label for="monthly" class="label-title">Monthly</label>
+      </div>
     </fieldset>
 
     <button type="submit" class="submit-btn">Book Now</button>

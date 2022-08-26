@@ -1,10 +1,11 @@
 console.log("helloooo");
-const estimateBtn = document.querySelector('.estimate-btn');
-const squareFt = document.getElementById('squareft');
-const submitBtn = document.querySelector('.submit-btn');
-const cost = document.querySelector('.cost');
 const menuIcon = document.querySelector('.material-symbols-outlined');
 const dropDownMenu = document.querySelector('nav')
+const residentialBtn = document.getElementById('residential');
+const commercialBtn = document.getElementById('commercial');
+const residentialDiv = document.querySelector('.residential-cleaning');
+const commercialDiv = document.querySelector('.commercial-cleaning');
+const submitBtn = document.querySelector('.submit-btn');
 
 //drop down menu for navigation on smaller screens
 menuIcon.addEventListener('click', () => {
@@ -12,13 +13,27 @@ menuIcon.addEventListener('click', () => {
   menuIcon.classList.add('hide');
 });
 
-//js for booking page calculation animation
-estimateBtn.addEventListener('click', () => {
-  console.log('hiiiiiii buddy');
-  let squareFtValue = squareFt.value * .20;
-  cost.textContent = squareFtValue;
-})
+//functions for showing residential fill-in info
+residentialBtn.addEventListener('click', () => {
+  residentialDiv.classList.remove('hide');
+  commercialDiv.classList.add('hide');
+});
 
-submitBtn.addEventListener('click', () => {
-  console.log("hiiii");
+
+//function for showing commercial fill-in info
+commercialBtn.addEventListener('click', () => {
+  commercialDiv.classList.remove('hide');
+  residentialDiv.classList.add('hide');
+  //js for booking page calculation animation
+  const comEstimateBtn = document.querySelector('.com-estimate-btn');
+  comEstimateBtn.addEventListener('click', () => {
+    const squareFt = document.getElementById('squareft');
+    const comCost = document.querySelector('.com-cost');
+    let squareFtValue = squareFt.value * .20;
+    comCost.textContent = squareFtValue;
+  })
+
+  submitBtn.addEventListener('click', () => {
+    console.log("hiiii");
+  });
 });

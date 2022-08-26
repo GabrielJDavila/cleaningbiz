@@ -90,7 +90,7 @@ nav.show {
 .hero-container {
   background-image: url(../img/cleaning.jpg);
   background-size: cover;
-  background-blend-mode: darken;
+  background-blend-moNuniton;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -100,7 +100,7 @@ nav.show {
 
 .hero-span {
   text-align: center;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 4em;
   color: black;
   font-weight: bold;
@@ -132,7 +132,7 @@ nav.show {
 }
 
 .section-title {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 5rem;
   border-bottom: solid 2px darkgrey;
   width: 50%;
@@ -224,6 +224,18 @@ nav.show {
   margin: 0 1em;
   padding: 12px;
   border-radius: 6px;
+}
+
+.gallery-link {
+  padding: 1em;
+  color: maroon;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.gallery-link:hover {
+  font-weight: bold;
+  font-size: 1em;
+  transition: all 0.3s ease;
 }
 
 .carousel {
@@ -387,6 +399,10 @@ option,
   font-family: 'Nunito', sans-serif;
 }
 
+.label-title {
+  font-weight: bold;
+}
+
 input {
   background-color: lavender;
   text-align: center;
@@ -402,18 +418,7 @@ input:required {
 .select-menu {
   width: 50%;
   font-size: 3rem;
-}
-
-.cost-container {
-  display: flex;
-  justify-content: center;
-}
-
-.dollar-sign {
-  font-size: 1em;
-  font-family: 'Nunito', sans-serif;
-  color: green;
-  font-weight: bold;
+  margin-bottom: 1em;
 }
 
 .job-frequency {
@@ -422,10 +427,33 @@ input:required {
   flex-direction: column;
 }
 
-input[type='radio'] {
+input[type='radio'],
+input[type='checkbox'] {
   transform: scale(3);
   margin: 0;
   width: 1em;
+}
+
+#cleaning-type {
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+.residential-cleaning,
+.commercial-cleaning {
+  margin-top: .75em;
+  display: flex;
+  flex-direction: column;
+}
+
+#bedrooms,
+#bathrooms,
+#appliances {
+  width: 100%;
+}
+
+.appliance-container {
+  margin-bottom: 1.5em;
 }
 
 .submit-btn {
@@ -442,24 +470,43 @@ input[type='radio'] {
   font-weight: bold;
 }
 
-.estimate-btn {
+.res-estimate-btn,
+.com-estimate-btn {
   font-family: 'Nunito', sans-serif;
   text-align: center;
   font-size: 1.2em;
   background: dodgerblue;
   color: white;
   border-radius: 6px;
+  width: 100%;
 }
 
 .estimate-title {
   margin: 0;
 }
 
-.cost {
+.com-cost,
+.res-cost {
   margin-top: 10px;
   font-weight: bold;
   color: green;
   font-size: 2em;
   text-align: center;
   font-family: 'Nunito', sans-serif;
+}
+
+.cost-container {
+  display: flex;
+  justify-content: center;
+}
+
+.dollar-sign {
+  font-size: 1em;
+  font-family: 'Nunito', sans-serif;
+  color: green;
+  font-weight: bold;
+}
+
+.hide {
+  display: none;
 }
