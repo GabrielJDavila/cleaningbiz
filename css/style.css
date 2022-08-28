@@ -440,7 +440,7 @@ input[type='checkbox'] {
 }
 
 .residential-cleaning,
-.commercial-cleaning {
+.move-cleaning {
   margin-top: .75em;
   display: flex;
   flex-direction: column;
@@ -471,7 +471,7 @@ input[type='checkbox'] {
 }
 
 .res-estimate-btn,
-.com-estimate-btn {
+.move-estimate-btn {
   font-family: 'Nunito', sans-serif;
   text-align: center;
   font-size: 1.2em;
@@ -479,13 +479,14 @@ input[type='checkbox'] {
   color: white;
   border-radius: 6px;
   width: 100%;
+  margin-top: 1em;
 }
 
 .estimate-title {
   margin: 0;
 }
 
-.com-cost,
+.move-cost,
 .res-cost {
   margin-top: 10px;
   font-weight: bold;
