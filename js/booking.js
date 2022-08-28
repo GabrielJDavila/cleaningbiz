@@ -34,19 +34,58 @@ moveBtn.addEventListener('click', () => {
     const moveExtras1 = document.querySelector('.extras1');
     const moveExtras2 = document.querySelector('.extras2');
     const moveExtras3 = document.querySelector('.extras3');
-    const wkClean = document.querySelector('.weekly');
-    const bwkClean = document.getElementById('bi-weekly');
-    const mClean = document.getElementById('monthly');
+    const wk = document.querySelector('.weekly');
+    const bwk = document.querySelector('.bi-weekly');
+    const mon = document.querySelector('.monthly');
+    const ot = document.querySelector('.one-time-clean');
 
-    if (deepClean.selected && moveExtras1.checked && moveExtras2.checked && moveExtras3.checked && wkClean.checked) {
-      let squareFtValue = Math.floor((squareFt.value * .20) + 45);
+    if (deepClean.selected && moveExtras1.checked && moveExtras2.checked && moveExtras3.checked && wk.checked) {
+      let squareFtValue = Math.floor((squareFt.value * .20) + 45) * .65;
       moveCost.textContent = squareFtValue;
-      alert("This works!");
-    } else if (deepClean.selected && moveExtras1.checked && moveExtras2.checked && moveExtras3.checked == false || deepClean.selected == true && moveExtras1.checked && moveExtras2.checked == false && moveExtras3.checked || deepClean.selected == true && moveExtras1.checked == false && moveExtras2.checked && moveExtras3.checked) {
+    } else if (deepClean.selected && moveExtras1.checked && moveExtras2.checked && moveExtras3.checked == false && wk.checked || deepClean.selected == true && moveExtras1.checked && moveExtras2.checked == false && moveExtras3.checked && wk.checked || deepClean.selected == true && moveExtras1.checked == false && moveExtras2.checked && moveExtras3.checked && wk.checked) {
+        let squareFtValue = Math.floor((squareFt.value * .20) + 30) * .65;
+        moveCost.textContent = squareFtValue;
+    } else if (deepClean.selected && moveExtras1.checked && moveExtras2.checked == false && moveExtras3.checked == false && wk.checked || deepClean.selected && moveExtras1.checked == false && moveExtras2.checked && moveExtras3.checked == false && wk.checked || deepClean.selected && moveExtras1.checked == false && moveExtras2.checked == false && moveExtras3.checked && wk.checked) {
+        let squareFtValue = Math.floor((squareFt.value * .20) + 15) * .65;
+        moveCost.textContent = squareFtValue;
+    } else if (deepClean.selected && moveExtras1.checked && moveExtras2.checked && moveExtras3.checked && bwk.checked) {
+        let squareFtValue = Math.floor((squareFt.value * .20) + 45) * .80;
+        moveCost.textContent = squareFtValue;
+    } else if (deepClean.selected && moveExtras1.checked && moveExtras2.checked && moveExtras3.checked == false && bwk.checked || deepClean.selected == true && moveExtras1.checked && moveExtras2.checked == false && moveExtras3.checked && bwk.checked || deepClean.selected == true && moveExtras1.checked == false && moveExtras2.checked && moveExtras3.checked && bwk.checked) {
+        let squareFtValue = Math.floor((squareFt.value * .20) + 30) * .80;
+        moveCost.textContent = squareFtValue;
+    } else if (deepClean.selected && moveExtras1.checked && moveExtras2.checked == false && moveExtras3.checked == false && bwk.checked || deepClean.selected && moveExtras1.checked == false && moveExtras2.checked && moveExtras3.checked == false && bwk.checked || deepClean.selected && moveExtras1.checked == false && moveExtras2.checked == false && moveExtras3.checked && bwk.checked) {
+        let squareFtValue = Math.floor((squareFt.value * .20) + 15) * .80;
+        moveCost.textContent = squareFtValue;
+    } else if (deepClean.selected && moveExtras1.checked && moveExtras2.checked && moveExtras3.checked && mon.checked) {
+        let squareFtValue = Math.floor((squareFt.value * .20) + 45) * .90;
+        moveCost.textContent = squareFtValue;
+    } else if (deepClean.selected && moveExtras1.checked && moveExtras2.checked && moveExtras3.checked == false && mon.checked || deepClean.selected == true && moveExtras1.checked && moveExtras2.checked == false && moveExtras3.checked && mon.checked || deepClean.selected == true && moveExtras1.checked == false && moveExtras2.checked && moveExtras3.checked && mon.checked) {
+        let squareFtValue = Math.floor((squareFt.value * .20) + 30) * .90;
+        moveCost.textContent = squareFtValue;
+    } else if (deepClean.selected && moveExtras1.checked && moveExtras2.checked == false && moveExtras3.checked == false && mon.checked || deepClean.selected && moveExtras1.checked == false && moveExtras2.checked && moveExtras3.checked == false && mon.checked || deepClean.selected && moveExtras1.checked == false && moveExtras2.checked == false && moveExtras3.checked && mon.checked) {
+        let squareFtValue = Math.floor((squareFt.value * .20) + 15) * .90;
+        moveCost.textContent = squareFtValue;
+    } else if (deepClean.selected && moveExtras1.checked && moveExtras2.checked && moveExtras3.checked && ot.checked) {
+        let squareFtValue = Math.floor((squareFt.value * .20) + 45);
+        moveCost.textContent = squareFtValue;
+    } else if (deepClean.selected && moveExtras1.checked && moveExtras2.checked && moveExtras3.checked == false && ot.checked || deepClean.selected == true && moveExtras1.checked && moveExtras2.checked == false && moveExtras3.checked && ot.checked || deepClean.selected == true && moveExtras1.checked == false && moveExtras2.checked && moveExtras3.checked && ot.checked) {
         let squareFtValue = Math.floor((squareFt.value * .20) + 30);
         moveCost.textContent = squareFtValue;
-    } else if (deepClean.selected && moveExtras1.checked && moveExtras2.checked == false && moveExtras3.checked == false || deepClean.selected && moveExtras1.checked == false && moveExtras2.checked && moveExtras3.checked == false || deepClean.selected && moveExtras1.checked == false && moveExtras2.checked == false && moveExtras3.checked) {
+    } else if (deepClean.selected && moveExtras1.checked && moveExtras2.checked == false && moveExtras3.checked == false && ot.checked || deepClean.selected && moveExtras1.checked == false && moveExtras2.checked && moveExtras3.checked == false && ot.checked || deepClean.selected && moveExtras1.checked == false && moveExtras2.checked == false && moveExtras3.checked && ot.checked) {
         let squareFtValue = Math.floor((squareFt.value * .20) + 15);
+        moveCost.textContent = squareFtValue;
+    } else if (wk.checked) {
+        let squareFtValue = Math.floor((squareFt.value * .20) * .65);
+        moveCost.textContent = squareFtValue;
+    } else if (bwk.checked) {
+        let squareFtValue = Math.floor((squareFt.value * .20) * .80);
+        moveCost.textContent = squareFtValue;
+    } else if (mon.checked) {
+        let squareFtValue = Math.floor((squareFt.value * .20) * .90);
+        moveCost.textContent = squareFtValue;
+    } else if (ot.checked) {
+        let squareFtValue = Math.floor((squareFt.value * .20));
         moveCost.textContent = squareFtValue;
     };
 
