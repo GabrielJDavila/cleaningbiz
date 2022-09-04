@@ -65,130 +65,43 @@
       <div class="residential-cleaning hide">
         <label for="home-size" class="label-title">Size of The Home:</label>
         <select id="home-size" name="home-size" class="select-menu" required>
-          <option value="studio">studio - $100</option>
-          <option value="1bd-home">1bd home - $120</option>
-          <option value="2bd-home">2bd home - $150</option>
-          <option value="3bd-home">3bd home - $180</option>
-          <option value="4bd-home">4bd home - $210</option>
-          <option value="5bd-home">5bd home - $240</option>
+          <option class="bdhome-size" value="studio">studio</option>
+          <option class="bdhome-size" value="1bd-home">1bd home</option>
+          <option class="bdhome-size" value="2bd-home">2bd home</option>
+          <option class="bdhome-size" value="3bd-home">3bd home</option>
+          <option class="bdhome-size" value="4bd-home">4bd home</option>
+          <option class="bdhome-size" value="5bd-home">5bd+ home</option>
         </select>
-        <label for="bedrooms" class="label-title bdrm-title">Bedrooms to be Cleaned:</label>
-        <select id="bedrooms" name="bedrooms" class="select-menu" required>
-          <option value="1bd">1bd - $30</option>
-          <option value="2bd">2bd - $60</option>
-          <option value="3bd">3bd - $90</option>
-          <option value="4bd">4bd+ - $120+</option>
-        </select>
+
         <label for="bathrooms" class="label-title btrm-title">Bathrooms:</label>
         <select id="bathrooms" name="bathrooms" class="select-menu" required>
-          <option value="1bath">1bath - $25</option>
-          <option value="2bath">2bath - $50</option>
-          <option value="3bath">3bath+ - $75+</option>
+          <option class="bath" value="1bath">1bathroom</option>
+          <option class="bath" value="2bath">2bathrooms+</option>
         </select>
-        <p class="label-title ap-title">Appliances:</p>
-        <div class="appliance-container">
-          <div class="fridge-container">
-            <input type="checkbox" id="appliance1" name="appliance1" value="Fridge">
-            <label for="appliance1" class="label-title">Fridge - $20</label>
-          </div>
-          <div class="stove-container">
-            <input type="checkbox" id="appliance2" name="appliance2" value="Stove">
-            <label for="appliance2" class="label-title">Stove - $20</label>
-          </div>
-          <div class="micro-container">
-            <input type="checkbox" id="appliance3" name="appliance3" value="Microwave">
-            <label for="appliance3" class="label-title">Microwave - $10</label>
-          </div>
-        </div>
-        <p class="label-title extra-title">Extras:</p>
-        <div class="extras-container">
-          <div class="baseboards-container">
-            <input type="checkbox" id="baseboards" name="extras" value="baseboards">
-            <label for="baseboards" class="label-title">Baseboards - $15</label>
-          </div>
-          <div class="windows-container">
-            <input type="checkbox" id="windows" name="extras" value="windows">
-            <label for="windows" class="label-title">Windows - $15</label>
-          </div>
-          <div class="blinds-container">
-            <input type="checkbox" id="blinds" name="extras" value="blinds">
-            <label for="blinds" class="label-title">Blinds - $15</label>
-          </div>
-          <div class="make-bed-container">
-            <input type="checkbox" id="make-bed" name="extras" value="make-bed">
-            <label for="make-bed" class="label-title">Make bed - $10</label>
-          </div>
-        </div>
+
         <h3>How Often Would You Like The Job Done?</h3>
         <div class="radio-btn-container">
-          <input type="radio" id="weekly" name="frequency_clean">
-          <label for="weekly" class="label-title">Weekly - 10% savings</label>
+          <input type="radio" id="weekly" name="frequency_clean" class="job-freq">
+          <label for="weekly" class="label-title">Weekly - 20% savings</label>
         </div>
         <div class="radio-btn-container">
-          <input type="radio" id="bi-weekly" name="frequency_clean">
-          <label for="bi-weekly" class="label-title">Bi-weekly - 20% savings</label>
+          <input type="radio" id="bi-weekly" name="frequency_clean" class="job-freq">
+          <label for="bi-weekly" class="label-title">Bi-weekly - 15% savings</label>
         </div>
         <div class="radio-btn-container">
-          <input type="radio" id="monthly" name="frequency_clean">
-          <label for="monthly" class="label-title">Monthly - 35% savings</label>
+          <input type="radio" id="monthly" name="frequency_clean" class="job-freq">
+          <label for="monthly" class="label-title">Monthly - 10% savings</label>
+        </div>
+        <div class="radio-btn-container">
+          <input type="radio" id="one-time" name="frequency_clean" class="job-freq">
+          <label for="one-time" class="label-title">One Time Clean</label>
         </div>
         <button type="button" class="res-estimate-btn">Estimate your price</button>
         <div class="cost-container">
           <p class="dollar-sign">$</p>
-          <p class="cost">...</p>
+          <p class="res-cost">...</p>
         </div>
-      </div>
-
-      <div class="move-cleaning hide">
-        <label for="service" class="label-title">Pick Your Service:</label>
-        <select id="service" name="service" class="select-menu" required>
-          <option value="move_cleaning">move in/move out cleaning</option>
-          <option value="office_cleaning">office cleaning</option>
-          <option value="gym_cleaning">gym cleaning</option>
-        </select>
-        <label for="com-clean-type" class="label-title">Pick Your Clean:</label>
-        <select id="com-clean-type" name="com-clean-type" class="select-menu" required>
-          <option class="deep-clean" value="deep-clean">deep clean - $.20/sqft</option>
-        </select>
-        <label for="squareft" class="label-title">Square Ft</label>
-        <input type="text" id="squareft" name="squareft" required>
-        <p class="label-title extra-title">Extras:</p>
-        <div class="extras-container">
-          <div class="baseboards-container">
-            <input type="checkbox" id="baseboards" name="extras" value="baseboards" class="extras1">
-            <label for="baseboards" class="label-title">Baseboards - $15+</label>
-          </div>
-          <div class="windows-container">
-            <input type="checkbox" id="windows" name="extras" value="windows" class="extras2">
-            <label for="windows" class="label-title">Windows - $15+</label>
-          </div>
-          <div class="blinds-container">
-            <input type="checkbox" id="blinds" name="extras" value="blinds" class="extras3">
-            <label for="blinds" class="label-title">Blinds - $15+</label>
-          </div>
-        </div>
-        <h3>How Often Would You Like The Job Done?</h3>
-        <div class="radio-btn-container">
-          <input type="radio" id="weekly" name="frequency_clean" class="weekly">
-          <label for="weekly" class="label-title">Weekly - 35% savings</label>
-        </div>
-        <div class="radio-btn-container">
-          <input type="radio" id="bi-weekly" name="frequency_clean" class="bi-weekly">
-          <label for="bi-weekly" class="label-title">Bi-weekly - 20% savings</label>
-        </div>
-        <div class="radio-btn-container">
-          <input type="radio" id="monthly" name="frequency_clean" class="monthly">
-          <label for="monthly" class="label-title">Monthly - 10% savings</label>
-        </div>
-        <div class="radio-btn-container">
-          <input type="radio" id="one-time" name="frequency_clean" class="one-time-clean">
-          <label for="one-time" class="label-title">One Time Clean - no savings</label>
-        </div>
-        <button type="button" class="move-estimate-btn">Estimate your price</button>
-        <div class="cost-container">
-          <p class="dollar-sign">$</p>
-          <p class="move-cost">...</p>
-        </div>
+        <p>* This price is based off of a two person team, and doesn't reflect the true rate.</p>
       </div>
     </fieldset>
 
