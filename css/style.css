@@ -452,10 +452,6 @@ input[type='checkbox'] {
   width: 100%;
 }
 
-.appliance-container {
-  margin-bottom: 1.5em;
-}
-
 .submit-btn {
   font-size: 1.2em;
   background-color: dodgerblue;
@@ -489,6 +485,7 @@ input[type='checkbox'] {
 .move-cost,
 .res-cost {
   margin-top: 10px;
+  margin-bottom: 0;
   font-weight: bold;
   color: green;
   font-size: 2em;
@@ -506,6 +503,44 @@ input[type='checkbox'] {
   font-family: 'Nunito', sans-serif;
   color: green;
   font-weight: bold;
+  margin-bottom: 0;
+}
+
+.price-description,
+.party-price-description,
+h3 {
+  font-family: 'Nunito', sans-serif;
+}
+
+.price-description,
+.party-price-description {
+  margin-top: 0;
+  padding: 0 1em;
+  text-align: center;
+  font-weight: bold;
+  font-size: .75em;
+}
+
+.booking-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+
+.booking-description,
+.booking-phone {
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+}
+
+.booking-phone {
+  text-decoration: none;
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 6px;
 }
 
 .hide {

@@ -101,7 +101,58 @@
           <p class="dollar-sign">$</p>
           <p class="res-cost">...</p>
         </div>
-        <p>* This price is based off of a two person team, and doesn't reflect the true rate.</p>
+        <p class="price-description">* This price is based off of a two person team at $90/hr, and doesn't reflect the true rate.</p>
+      </div>
+
+      <div class="move-cleaning hide">
+        <label for="move-home-size" class="label-title">Size of The Home:</label>
+        <select id="move-home-size" name="move-home-size" class="select-menu" required>
+          <option class="move-bdhome-size" value="studio">studio</option>
+          <option class="move-bdhome-size" value="1bd-home">1bd home</option>
+          <option class="move-bdhome-size" value="2bd-home">2bd home</option>
+          <option class="move-bdhome-size" value="3bd-home">3bd home</option>
+          <option class="move-bdhome-size" value="4bd-home">4bd home</option>
+          <option class="move-bdhome-size" value="5bd-home">5bd+ home</option>
+        </select>
+
+        <label for="move-bathrooms" class="label-title btrm-title">Bathrooms:</label>
+        <select id="move-bathrooms" name="move-bathrooms" class="select-menu" required>
+          <option class="move-bath" value="1bath">1bathroom</option>
+          <option class="move-bath" value="2bath">2bathrooms+</option>
+        </select>
+
+        <h3>How Often Would You Like The Job Done?</h3>
+        <div class="radio-btn-container">
+          <input type="radio" id="weekly" name="frequency_clean" class="move-job-freq">
+          <label for="weekly" class="label-title">Weekly - 20% savings</label>
+        </div>
+        <div class="radio-btn-container">
+          <input type="radio" id="bi-weekly" name="frequency_clean" class="move-job-freq">
+          <label for="bi-weekly" class="label-title">Bi-weekly - 15% savings</label>
+        </div>
+        <div class="radio-btn-container">
+          <input type="radio" id="monthly" name="frequency_clean" class="move-job-freq">
+          <label for="monthly" class="label-title">Monthly - 10% savings</label>
+        </div>
+        <div class="radio-btn-container">
+          <input type="radio" id="one-time" name="frequency_clean" class="move-job-freq">
+          <label for="one-time" class="label-title">One Time Clean</label>
+        </div>
+        <button type="button" class="move-estimate-btn">Estimate your price</button>
+        <div class="cost-container">
+          <p class="dollar-sign">$</p>
+          <p class="move-cost">...</p>
+        </div>
+        <p class="price-description">* This price is based off of a two person team at $90/hr, and doesn't reflect the true rate.</p>
+      </div>
+
+      <div class="party-cleaning hide">
+
+        <div class="cost-container">
+          <p class="dollar-sign">$</p>
+          <p class="party-cost">...</p>
+        </div>
+        <p class="party-price-description">* This price is based off of a two person team at $90/hr, and doesn't reflect the true rate.</p>
       </div>
     </fieldset>
 
@@ -120,8 +171,10 @@
         <label for="monthly" class="label-title">Monthly</label>
       </div>
     </fieldset> -->
-
-    <button type="submit" class="submit-btn">Book Now</button>
+    <div class="booking-div">
+      <p class="booking-description">Call Now to Book an Appointment</p>
+      <a  class="booking-phone" href="tel:+16306423773">(630) 642-3773</a>
+    </div>
   </form>
 
   <footer>2022 M&G EcoCleaning LLC</footer>
