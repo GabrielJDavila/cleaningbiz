@@ -217,7 +217,7 @@ moveBtn.addEventListener('click', () => {
         mCost.textContent = mPriceEst;
     } else if (mbdHomeSize[4].selected && mBath[0].selected && mjobFreq[1].checked
       || mbdHomeSize[4].selected && mBath[1].selected && mjobFreq[1].checked) {
-        let resPriceEst = Math.floor((90 * 5.5) * .85);
+        let mPriceEst = Math.floor((90 * 5.5) * .85);
         mCost.textContent = mPriceEst;
     } else if (mbdHomeSize[4].selected && mBath[0].selected && mjobFreq[2].checked
       || mbdHomeSize[4].selected && mBath[1].selected && mjobFreq[2].checked) {
@@ -238,7 +238,7 @@ moveBtn.addEventListener('click', () => {
         mCost.textContent = mPriceEst;
     } else if (mbdHomeSize[5].selected && mBath[0].selected && mjobFreq[2].checked
       || mbdHomeSize[5].selected && mBath[1].selected && mjobFreq[2].checked) {
-        let resPriceEst = Math.floor((90 * 6.5) * .9);
+        let mPriceEst = Math.floor((90 * 6.5) * .9);
         mCost.textContent = mPriceEst;
     } else if (mbdHomeSize[5].selected && mBath[0].selected && mjobFreq[3].checked
       || mbdHomeSize[5].selected && mBath[1].selected && mjobFreq[3].checked) {
