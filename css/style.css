@@ -1,3 +1,4 @@
+
 *,
 *::before,
 *::after {
@@ -8,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: white;
-  font-size: 20px;
+  text-align: center;
 }
 
 header,
@@ -28,7 +29,6 @@ header {
 
 .site-title-container {
   display: flex;
-  padding-top: 20px;
 }
 
 .biz-title {
@@ -37,11 +37,11 @@ header {
   padding-left: 28px;
   text-align: center;
   font-family: 'Dancing Script', cursive;
-  font-size: 5rem;
+  font-size: 2.5rem;
 }
 
 .material-symbols-outlined.md-24 {
-  font-size: 112px;
+  font-size: 70px;
   margin-left: auto;
   padding-right: 28px;
 }
@@ -52,17 +52,18 @@ nav {
 
 nav.show {
     margin-left: : 0;
-    padding: 12px;
+    padding: 10px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     background: #660000;
-    font-size: 2.7rem;
+    font-size: 1.5rem;
 }
 
 .nav-item {
   color: white;
   text-decoration: none;
+  padding: 5px;
 }
 
 .nav-item:hover {
@@ -101,21 +102,23 @@ nav.show {
 .hero-span {
   text-align: center;
   font-family: 'Quicksand', sans-serif;
-  font-size: 4em;
+  font-size: 2.5em;
   color: black;
   font-weight: bold;
+  width: 85%;
+  margin: 0 auto;
 }
 
 .scroll-down {
   margin: auto;
   padding: 12px 8px;
-  width: 50%;
+  width: 70%;
   background: lavender;
   border-radius: 6px;
   color: black;
   font-family: 'Nunito', sans-serif;
   border: 2px #1d3030;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .scroll-down:hover {
@@ -133,23 +136,20 @@ nav.show {
 
 .section-title {
   font-family: 'Quicksand', sans-serif;
-  font-size: 5rem;
+  font-size: 3rem;
   border-bottom: solid 2px darkgrey;
   width: 50%;
   text-align: center;
   margin: 1em auto;
 }
 
-.about-section {
-  margin: 64px;
-}
-
 .about-section,
 .sevices-section,
 .reviews-section,
 .contact-section {
-  font-size: 4rem;
+  font-size: 2rem;
   padding: 0 20px;
+  font-family: 'Nunito', sans-serif;
 }
 
 .services-list {
@@ -164,7 +164,7 @@ nav.show {
 
 .service-item {
   padding-bottom: 20px;
-  font-size: 5rem;
+  font-size: 2rem;
   border-radius: 5px;
   color: white;
 }
@@ -205,7 +205,7 @@ nav.show {
   color: black;
   padding: 0 30px;
   text-decoration: none;
-  font-size: 3.5rem;
+  font-size: 2rem;
   font-family: 'Nunito', sans-serif;
 }
 
@@ -292,10 +292,11 @@ nav.show {
 }
 
 .review {
-  margin: 0 1em;
+  margin: 0 auto;
   background: lightgrey;
   padding: 1em;
   border-radius: 12px;
+  width: 95%;
 }
 
 #person-img {
@@ -307,6 +308,7 @@ nav.show {
 #review-info {
   font-family: 'Nunito', sans-serif;
   margin: .5em .7em;
+  font-size: .75em;;
 }
 
 .prev-btn,
@@ -331,7 +333,7 @@ nav.show {
   flex-direction: column;
   text-align: center;
   background: maroon;
-  padding: 30px;
+  padding: 12px;
   position: sticky;
   bottom: 0;
   align-items: center;
@@ -339,13 +341,14 @@ nav.show {
 
 .sticky-btn {
 
-  font-size: 2.5em;
+  font-size: 1.4em;
   font-family: 'Nunito', sans-serif;
   border-radius: 5px;
-  width: 35%;
+  width: 60%;
   border: none;
   background: lavender;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .sticky-btn:hover {
@@ -357,31 +360,43 @@ nav.show {
 
 .sticky-text {
   font-family: 'Nunito', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: bold;
   color: white;
+  margin: 0;
+  padding: .5em;
 }
 
 .sticky-phone {
-  font-size: 2.5em;
+  font-size: 1.5em;
   font-family: 'Nunito', sans-serif;
   text-decoration: underline;
   font-weight: bold;
   color: white;
+  font-size: 1.75em;
 }
 
 /* Booking page styles */
 
+.booking-body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  text-align: center;
+
+}
+
 .form-container {
   margin-top: 6em;
-  font-size: 3em;
+  padding-top: 4em;
   display: flex;
   flex-direction: column;
   background: white;
-  width: 90%;
-  margin: 5em auto 2em;
+  margin: auto;
   border-radius: 6px;
   margin-bottom: 50px;
+  text-align: center;
+  font-size: 1.5em;
 }
 
 .basic-info-container,
@@ -415,10 +430,16 @@ input:required {
   border: solid 2px red;
 }
 
+select {
+  text-align: center;
+}
+
 .select-menu {
   width: 50%;
-  font-size: 3rem;
+  font-size: 1.5rem;
   margin-bottom: 1em;
+  text-align: center;
+  margin: 0 auto 1em auto;
 }
 
 .job-frequency {
@@ -427,9 +448,14 @@ input:required {
   flex-direction: column;
 }
 
+div.radio-btn-container {
+  text-align: left;
+  padding-left: 6px;
+}
+
 input[type='radio'],
 input[type='checkbox'] {
-  transform: scale(3);
+  transform: scale(2);
   margin: 0;
   width: 1em;
 }
@@ -526,14 +552,16 @@ h3 {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  width: 70%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .booking-description,
 .booking-phone {
   text-align: center;
   font-family: 'Nunito', sans-serif;
+  margin: 0 auto;
+  font-size: 1.25em;
+  padding: .5em;
 }
 
 .booking-phone {
@@ -541,8 +569,530 @@ h3 {
   background-color: dodgerblue;
   color: white;
   border-radius: 6px;
+  font-size: 1.5em;
 }
 
 .hide {
   display: none;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-size: 12px;
+  }
+
+  header,
+  footer {
+    font-family: 'Nunito', sans-serif;
+    background: maroon;
+    color: white;
+    text-align: center;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+  }
+
+  .site-title-container {
+    display: flex;
+    padding-top: 20px;
+  }
+
+  .biz-title {
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 28px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+  }
+
+  .material-symbols-outlined.md-24 {
+    font-size: 90px;
+    margin-left: auto;
+    padding-right: 28px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav.show {
+      margin-left: : 0;
+      padding: 12px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      background: #660000;
+      font-size: 2rem;
+  }
+
+  .nav-item {
+    color: white;
+    text-decoration: none;
+  }
+
+  .nav-item:hover {
+    background: white;
+    color: black;
+    font-weight: bold;
+    padding: 3px 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+
+  .hide {
+    display: none;
+  }
+
+  .hero-span {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 4em;
+    color: black;
+    font-weight: bold;
+  }
+
+  .scroll-down {
+    margin: auto;
+    padding: 8px 6px;
+    width: 50%;
+    background: lavender;
+    border-radius: 6px;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    border: 2px #1d3030;
+    font-size: 2rem;
+  }
+
+  .scroll-down:hover {
+    background: white;
+    box-shadow: 0px 2px 2px 2px #1d3030;
+    opacity: 85%;
+    transition: all 0.3s ease;
+  }
+
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section-title {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 3.5rem;
+    border-bottom: solid 2px darkgrey;
+    width: 50%;
+    text-align: center;
+    margin: 1em auto;
+  }
+
+  .about-section,
+  .sevices-section,
+  .reviews-section,
+  .contact-section {
+    font-size: 2.5rem;
+    padding: 0 20px;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .services-list {
+    justify-content: center;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 3rem;
+  }
+
+  .service-item {
+    padding-bottom: 20px;
+    font-size: 2.5rem;
+    border-radius: 5px;
+    color: white;
+  }
+
+  .s-1,
+  .s-2,
+  .s-3 {
+    width: 70vw;
+  }
+
+  .s-1 {
+    background: url(../img/cleaning4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .s-2 {
+    background: url(../img/cleaning6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .s-3 {
+    background: url(../img/cleaning5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .service-item-title {
+    color: white;
+    background: rgba(255, 45, 0, 0.3);
+    margin-top: 0;
+    padding: 0 12px;
+  }
+
+  .service-link {
+    background-color: white;
+    color: black;
+    padding: 0 30px;
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .service-link:hover {
+    padding: 4px;
+    border-radius: 4px;
+    background: white;
+    color: black;
+    transition: all 0.3s ease;
+  }
+
+  .service-description-1,
+  .service-description-2,
+  .service-description-3 {
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0 1em;
+    padding: 12px;
+    border-radius: 6px;
+  }
+
+  .gallery-link {
+    padding: 1em;
+    color: maroon;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  .gallery-link:hover {
+    font-weight: bold;
+    font-size: 1em;
+    transition: all 0.3s ease;
+  }
+
+  .carousel {
+    position: relative;
+    width: 85%;
+    height: 100%;
+    margin: auto;
+  }
+
+  .carousel-item {
+    height: 400px;
+    background: grey;
+    padding: 1em;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+    color: white;
+    width: 100%;
+    display: none;
+  }
+
+  .carousel-item-selected {
+    display: block;
+  }
+
+  .carousel-nav {
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+  }
+
+  .carousel-button {
+    border-radius: 50%;
+    height: 55px;
+    width: 50px;
+    margin: 0 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    cursor: pointer;
+  }
+
+  .carousel-button-selected {
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  .underline {
+    border-bottom: solid 2px darkgrey;
+    width: 50%;
+    text-align: center;
+    margin: 1em auto;
+  }
+
+  .review {
+    margin: 0 1em;
+    background: lightgrey;
+    padding: 1em;
+    border-radius: 12px;
+  }
+
+  #person-img {
+    border-radius: 45%;
+  }
+
+  #author,
+  #service-reviewed,
+  #review-info {
+    font-family: 'Nunito', sans-serif;
+    margin: .5em .7em;
+  }
+
+  .prev-btn,
+  .next-btn {
+    font-size: 1.5em;
+    padding: 0 12px;
+  }
+
+  .prev-btn {
+    margin-right: 1em;
+  }
+
+  .random-btn {
+    margin-top: .5em;
+    padding: .5em;
+    font-size: .8em;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .sticky-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: maroon;
+    padding: 30px;
+    position: sticky;
+    bottom: 0;
+    align-items: center;
+  }
+
+  .sticky-btn {
+
+    font-size: 2.5em;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 5px;
+    width: 35%;
+    border: none;
+    background: lavender;
+    text-decoration: none;
+  }
+
+  .sticky-btn:hover {
+    background: white;
+    border: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+
+  .sticky-text {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+  }
+
+  .sticky-phone {
+    font-size: 2.5em;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: underline;
+    font-weight: bold;
+    color: white;
+  }
+
+  /* Booking page styles */
+
+  .form-container {
+    margin-top: 6em;
+    font-size: 3em;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 90%;
+    margin: 5em auto 2em;
+    border-radius: 6px;
+    margin-bottom: 50px;
+  }
+
+  .basic-info-container,
+  .job-info-container {
+    background: white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .basic-info,
+  .job-info,
+  .label-title,
+  option,
+  .job-frequency {
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .label-title {
+    font-weight: bold;
+  }
+
+  input {
+    background-color: lavender;
+    text-align: center;
+    border-radius: 3px;
+    text-align: left;
+    font-size: 1em;
+  }
+
+  input:required {
+    border: solid 2px red;
+  }
+
+  .select-menu {
+    width: 50%;
+    font-size: 3rem;
+    margin-bottom: 1em;
+  }
+
+  .job-frequency {
+    background: white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  input[type='radio'],
+  input[type='checkbox'] {
+    transform: scale(3);
+    margin: 0;
+    width: 1em;
+  }
+
+  #cleaning-type {
+    font-weight: bold;
+    margin-top: 1em;
+  }
+
+  .residential-cleaning,
+  .move-cleaning {
+    margin-top: .75em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #bedrooms,
+  #bathrooms,
+  #appliances {
+    width: 100%;
+  }
+
+  .submit-btn {
+    font-size: 1.2em;
+    background-color: dodgerblue;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 6px;
+    color: white;
+  }
+
+  .submit-btn:hover {
+    background: lightblue;
+    font-weight: bold;
+  }
+
+  .res-estimate-btn,
+  .move-estimate-btn {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    font-size: 1.2em;
+    background: dodgerblue;
+    color: white;
+    border-radius: 6px;
+    width: 100%;
+    margin-top: 1em;
+  }
+
+  .estimate-title {
+    margin: 0;
+  }
+
+  .move-cost,
+  .res-cost {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: bold;
+    color: green;
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .cost-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .dollar-sign {
+    font-size: 1em;
+    font-family: 'Nunito', sans-serif;
+    color: green;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  .price-description,
+  .party-price-description,
+  h3 {
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .price-description,
+  .party-price-description {
+    margin-top: 0;
+    padding: 0 1em;
+    text-align: center;
+    font-weight: bold;
+    font-size: .75em;
+  }
+
+  .booking-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+  }
+
+  .booking-description,
+  .booking-phone {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .booking-phone {
+    text-decoration: none;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 6px;
+  }
+
+  .hide {
+    display: none;
+  }
+
 }

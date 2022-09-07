@@ -24,15 +24,27 @@ scrollDownBtn.addEventListener('click', () => {
 
 //learn more button code to drop down description
 learnMoreBtn1.addEventListener('click', () => {
-  servDescrip1.classList.remove('hide');
+  if (servDescrip1.classList.contains('hide')) {
+    servDescrip1.classList.remove('hide');
+  } else {
+    servDescrip1.classList.add('hide');
+  };
 });
 
 learnMoreBtn2.addEventListener('click', () => {
-  servDescrip2.classList.remove('hide');
+  if (servDescrip2.classList.contains('hide')) {
+    servDescrip2.classList.remove('hide');
+  } else {
+    servDescrip2.classList.add('hide');
+  };
 });
 
 learnMoreBtn3.addEventListener('click', () => {
-  servDescrip3.classList.remove('hide');
+  if (servDescrip3.classList.contains('hide')) {
+    servDescrip3.classList.remove('hide');
+  } else {
+    servDescrip3.classList.add('hide');
+  };
 });
 
 //carousel function
