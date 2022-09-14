@@ -23,29 +23,29 @@ scrollDownBtn.addEventListener('click', () => {
 });
 
 //learn more button code to drop down description
-learnMoreBtn1.addEventListener('click', () => {
-  if (servDescrip1.classList.contains('hide')) {
-    servDescrip1.classList.remove('hide');
-  } else {
-    servDescrip1.classList.add('hide');
-  };
-});
+// learnMoreBtn1.addEventListener('click', () => {
+//   if (servDescrip1.classList.contains('hide')) {
+//     servDescrip1.classList.remove('hide');
+//   } else {
+//     servDescrip1.classList.add('hide');
+//   };
+// });
 
-learnMoreBtn2.addEventListener('click', () => {
-  if (servDescrip2.classList.contains('hide')) {
-    servDescrip2.classList.remove('hide');
-  } else {
-    servDescrip2.classList.add('hide');
-  };
-});
-
-learnMoreBtn3.addEventListener('click', () => {
-  if (servDescrip3.classList.contains('hide')) {
-    servDescrip3.classList.remove('hide');
-  } else {
-    servDescrip3.classList.add('hide');
-  };
-});
+// learnMoreBtn2.addEventListener('click', () => {
+//   if (servDescrip2.classList.contains('hide')) {
+//     servDescrip2.classList.remove('hide');
+//   } else {
+//     servDescrip2.classList.add('hide');
+//   };
+// });
+//
+// learnMoreBtn3.addEventListener('click', () => {
+//   if (servDescrip3.classList.contains('hide')) {
+//     servDescrip3.classList.remove('hide');
+//   } else {
+//     servDescrip3.classList.add('hide');
+//   };
+// });
 
 //carousel function
 document.querySelectorAll(".carousel").forEach(carousel => {
@@ -78,74 +78,74 @@ document.querySelectorAll(".carousel").forEach(carousel => {
 });
 
 
-//review carousel
-const reviews = [
-  {
-    id: 1,
-    name: "Aurora Dentrix",
-    job: "Office Cleaning",
-    img: "./img/cleaning3.jpg",
-    text: "We have to look our best for our clients, and the office space needed a deep clean. We now use them monthly to save us the time and focus on our best work."
-  },
-  {
-    id: 2,
-    name: "Kelly Williams, Realtor",
-    job: "Move Out Cleaning",
-    img: "./img/cleaning4.jpg",
-    text: "They're the best! Helped me clean my units for showings."
-  },
-  {
-    id: 3,
-    name: "Edge Fitness",
-    job: "Gym Cleaning",
-    img: "./img/cleaning6.jpg",
-    text: "They are proffessionals and get the job done perfectly. We use them on a weekly basis for deep cleans of the facility."
-  }
-]
-
-// select items
-const img = document.getElementById('person-img');
-const author = document.getElementById('author');
-const job = document.getElementById('service-reviewed');
-const info = document.getElementById('review-info');
-
-const prevBtn = document.querySelector('.prev-btn');
-const nxtBtn = document.querySelector('.next-btn');
-const randomBtn = document.querySelector('.random-btn');
-let currentItem = 0;
-
-//load initial items
-window.addEventListener("DOMContentLoaded", () => {
-  showReview()
-});
-
-// show review based on item
-function showReview() {
-  const item = reviews[currentItem];
-  img.src = item.img;
-  author.textContent = item.name;
-  job.textContent = item.job;
-  info.textContent = item.text;
-};
-
-// show next review
-nxtBtn.addEventListener('click', () => {
-  currentItem++;
-  if(currentItem > reviews.length - 1) {
-    currentItem = 0;
-  }
-  showReview();
-});
-
-prevBtn.addEventListener('click', () => {
-  currentItem--;
-  if(currentItem < 0) {
-    currentItem = reviews.length - 1;
-  }
-  showReview();
-});
-
-randomBtn.addEventListener('click', () => {
-  currentItem = Math.floor(Math.random() * reviews.length);
-  showReview();
-});
+// //review carousel
+// const reviews = [
+//   {
+//     id: 1,
+//     name: "Aurora Dentrix",
+//     job: "Office Cleaning",
+//     img: "./img/cleaning3.jpg",
+//     text: "We have to look our best for our clients, and the office space needed a deep clean. We now use them monthly to save us the time and focus on our best work."
+//   },
+//   {
+//     id: 2,
+//     name: "Kelly Williams, Realtor",
+//     job: "Move Out Cleaning",
+//     img: "./img/cleaning4.jpg",
+//     text: "They're the best! Helped me clean my units for showings."
+//   },
+//   {
+//     id: 3,
+//     name: "Edge Fitness",
+//     job: "Gym Cleaning",
+//     img: "./img/cleaning6.jpg",
+//     text: "They are proffessionals and get the job done perfectly. We use them on a weekly basis for deep cleans of the facility."
+//   }
+// ]
+//
+// // select items
+// const img = document.getElementById('person-img');
+// const author = document.getElementById('author');
+// const job = document.getElementById('service-reviewed');
+// const info = document.getElementById('review-info');
+//
+// const prevBtn = document.querySelector('.prev-btn');
+// const nxtBtn = document.querySelector('.next-btn');
+// const randomBtn = document.querySelector('.random-btn');
+// let currentItem = 0;
+//
+// //load initial items
+// window.addEventListener("DOMContentLoaded", () => {
+//   showReview()
+// });
+//
+// // show review based on item
+// function showReview() {
+//   const item = reviews[currentItem];
+//   img.background = item.img;
+//   author.textContent = item.name;
+//   job.textContent = item.job;
+//   info.textContent = item.text;
+// };
+//
+// // show next review
+// nxtBtn.addEventListener('click', () => {
+//   currentItem++;
+//   if(currentItem > reviews.length - 1) {
+//     currentItem = 0;
+//   }
+//   showReview();
+// });
+//
+// prevBtn.addEventListener('click', () => {
+//   currentItem--;
+//   if(currentItem < 0) {
+//     currentItem = reviews.length - 1;
+//   }
+//   showReview();
+// });
+//
+// randomBtn.addEventListener('click', () => {
+//   currentItem = Math.floor(Math.random() * reviews.length);
+//   showReview();
+// });
