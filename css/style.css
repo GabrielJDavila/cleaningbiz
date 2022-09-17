@@ -102,12 +102,14 @@ nav.show {
 .hero-span {
   text-align: center;
   font-family: 'Quicksand', sans-serif;
-  font-size: 2.5em;
+  font-size: 2em;
   color: white;
   background: maroon;
   font-weight: bold;
   width: 85%;
-  margin: 0 auto 1em auto;
+  margin: 0 auto .5em auto;
+  border-radius: 6px;
+  padding: 2px;
 }
 
 
@@ -120,7 +122,7 @@ nav.show {
   color: black;
   font-family: 'Nunito', sans-serif;
   border: 2px #1d3030;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .scroll-down:hover {
@@ -150,7 +152,7 @@ nav.show {
 .sevices-section,
 .reviews-section,
 .contact-section {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 0 10px;
   font-family: 'Nunito', sans-serif;
 }
@@ -184,7 +186,6 @@ nav.show {
 
   .service-section-cont {
     font-family: 'Nunito', sans-serif;
-    font-size: 2em;
   }
 /* .s-1 {
   background: url(../img/cleaning4.jpg);
@@ -209,7 +210,9 @@ nav.show {
   background: maroon;
   /* background: rgba(255, 45, 0, 0.3); */
   margin-top: 0;
+  margin-bottom: 0;
   padding: 0 12px;
+  font-size: 1.25em;
 }
 
 .service-link {
@@ -243,6 +246,7 @@ nav.show {
   font-family: 'Nunito', sans-serif;
   width: 85%;
   margin: 0 auto;
+  font-size: 1.5em;
 }
 
 ul {
@@ -253,7 +257,6 @@ ul {
 }
 
 li {
-  font-size: 2em;
 }
 /* service page styles start */
 
@@ -316,7 +319,7 @@ div.other-services-container {
 
 /* service page styles end */
 .servicespage-link {
-  font-size: 1.75em;
+  font-size: 1em;
   color: maroon;
 }
 
@@ -324,6 +327,7 @@ div.other-services-container {
   padding: 1em;
   color: maroon;
   font-family: 'Quicksand', sans-serif;
+  font-size: 1.5em;
 }
 
 .gallery-link:hover {
@@ -407,7 +411,7 @@ div.other-services-container {
 
 .review-link {
   font-family: 'Nunito', sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
   color: black;
 }
 
@@ -458,6 +462,15 @@ div.other-services-container {
   color: white;
   font-size: 1.75em;
 }
+
+/* About Page styles */
+
+.about-page-main {
+  margin: 0 1em;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5em;
+}
+
 
 /* Booking page styles */
 
@@ -747,7 +760,6 @@ h3 {
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     font-size: 3.5em;
-    color: black;
     font-weight: bold;
   }
 
@@ -876,6 +888,10 @@ h3 {
     font-size: .75em;
   }
 
+  .what-we-can-do {
+    font-size: 2em;
+  }
+
   /* service page styles start */
 
   .services-hero-container {
@@ -886,6 +902,10 @@ h3 {
     background: maroon;
     color: white;
     border-radius: 5px;
+  }
+
+  .service-page-main {
+    font-size: 2em;
   }
 
   .main-services-container {
@@ -910,7 +930,7 @@ h3 {
 
   .service-page-descrip {
     font-family: 'Nunito', sans-serif;
-    font-size: 1.25em;
+    font-size: 1.75em;
   }
 
   .other-services {
@@ -923,7 +943,7 @@ h3 {
 
   .other-services-descrip {
     font-family: 'Nunito', sans-serif;
-    font-size: 1.25em;
+    font-size: 1.5em;
     padding: 2em;
   }
 
@@ -938,15 +958,10 @@ h3 {
   /* service page styles end */
 
   .gallery-link {
-    padding: 1em;
+    padding: 2em;
     color: maroon;
     font-family: 'Quicksand', sans-serif;
-  }
-
-  .gallery-link:hover {
-    font-weight: bold;
-    font-size: 1em;
-    transition: all 0.3s ease;
+    font-size: 2em;
   }
 
   .carousel {
@@ -1019,6 +1034,11 @@ h3 {
     height: auto;
     flex-direction: row;
   }
+
+  .review-link {
+    font-size: 2em;
+  }
+
   /* .review {
     margin: 0 1em;
     background: lightgrey;
@@ -1114,6 +1134,15 @@ h3 {
   .sticky-phone:hover {
     transform: scale(1.1);
     transition: all 0.3s ease;
+  }
+
+
+  /* About page styles for 600px or larger */
+
+  .about-item {
+    text-align: left;
+    width: 50%;
+    border-radius: 2px 40px 2px 2px;
   }
 
   /* Booking page styles */
