@@ -27,106 +27,106 @@ residentialBtn.addEventListener('click', () => {
     const resBath = document.querySelectorAll('.bath');
     const jobFreq = document.querySelectorAll('.job-freq');
     const resCost = document.querySelector('.res-cost');
-    const hrRate = 80;
+    const hrRate = 90;
 
     if (bdHomeSize[0].selected && resBath[0].selected && jobFreq[0].checked
     || bdHomeSize[0].selected && resBath[1].selected && jobFreq[0].checked) {
-      let resPriceEst = Math.floor((80 * 1.5) * .8);
+      let resPriceEst = Math.floor(60 * 1.5);
       resCost.textContent = resPriceEst;
     } else if (bdHomeSize[0].selected && resBath[0].selected && jobFreq[1].checked
       || bdHomeSize[0].selected && resBath[1].selected && jobFreq[1].checked) {
-        let resPriceEst = Math.floor((80 * 1.5) * .85);
+        let resPriceEst = Math.floor(70 * 1.5);
         resCost.textContent = resPriceEst;
     } else if (bdHomeSize[0].selected && resBath[0].selected && jobFreq[2].checked
       || bdHomeSize[0].selected && resBath[1].selected && jobFreq[2].checked) {
-        let resPriceEst = Math.floor((80 * 1.5) * .9);
+        let resPriceEst = Math.floor(80 * 1.5);
         resCost.textContent = resPriceEst;
     } else if (bdHomeSize[0].selected && resBath[0].selected && jobFreq[3].checked
       || bdHomeSize[0].selected && resBath[1].selected && jobFreq[3].checked) {
-        let resPriceEst = Math.floor(80 * 1.5);
+        let resPriceEst = Math.floor(90 * 1.5);
         resCost.textContent = resPriceEst;
     } else if (bdHomeSize[1].selected && resBath[0].selected && jobFreq[0].checked
       || bdHomeSize[1].selected && resBath[1].selected && jobFreq[0].checked) {
-        let resPriceEst = Math.floor((80 * 2.5) * .8);
+        let resPriceEst = Math.floor(60 * 2.5);
         resCost.textContent = resPriceEst;
     } else if (bdHomeSize[1].selected && resBath[0].selected && jobFreq[1].checked
       || bdHomeSize[1].selected && resBath[1].selected && jobFreq[1].checked) {
-        let resPriceEst = Math.floor((80 * 2.5) * .85);
+        let resPriceEst = Math.floor(70 * 2.5);
         resCost.textContent = resPriceEst;
     } else if (bdHomeSize[1].selected && resBath[0].selected && jobFreq[2].checked
       || bdHomeSize[1].selected && resBath[1].selected && jobFreq[2].checked) {
-        let resPriceEst = Math.floor((80 * 2.5) * .9);
+        let resPriceEst = Math.floor(80 * 2.5);
         resCost.textContent = resPriceEst;
     } else if (bdHomeSize[1].selected && resBath[0].selected && jobFreq[3].checked
       || bdHomeSize[1].selected && resBath[1].selected && jobFreq[3].checked) {
-        let resPriceEst = Math.floor(80 * 2.5);
+        let resPriceEst = Math.floor(90 * 2.5);
         resCost.textContent = resPriceEst;
     } else if (bdHomeSize[2].selected && resBath[0].selected && jobFreq[0].checked
       || bdHomeSize[2].selected && resBath[1].selected && jobFreq[0].checked) {
-        let resPriceEst = Math.floor((80 * 3.5) * .8);
+        let resPriceEst = Math.floor(60 * 3.5);
         resCost.textContent = resPriceEst;
     } else if (bdHomeSize[2].selected && resBath[0].selected && jobFreq[1].checked
       || bdHomeSize[2].selected && resBath[1].selected && jobFreq[1].checked) {
-        let resPriceEst = Math.floor((80 * 3.5) * .85);
+        let resPriceEst = Math.floor(70 * 3.5);
         resCost.textContent = resPriceEst;
     } else if (bdHomeSize[2].selected && resBath[0].selected && jobFreq[2].checked
       || bdHomeSize[2].selected && resBath[1].selected && jobFreq[2].checked) {
-        let resPriceEst = Math.floor((80 * 3.5) * .9);
+        let resPriceEst = Math.floor(80 * 3.5);
         resCost.textContent = resPriceEst;
     } else if (bdHomeSize[2].selected && resBath[0].selected && jobFreq[3].checked
       || bdHomeSize[2].selected && resBath[1].selected && jobFreq[3].checked) {
-        let resPriceEst = Math.floor(80 * 3.5);
+        let resPriceEst = Math.floor(90 * 3.5);
         resCost.textContent = resPriceEst;
 
     } else if (bdHomeSize[3].selected && resBath[0].selected && jobFreq[0].checked
       || bdHomeSize[3].selected && resBath[1].selected && jobFreq[0].checked) {
-        let resPriceEst = Math.floor((80 * 4.5) * .8);
+        let resPriceEst = Math.floor(60 * 4.5);
         resCost.textContent = resPriceEst;
     } else if (bdHomeSize[3].selected && resBath[0].selected && jobFreq[1].checked
       || bdHomeSize[3].selected && resBath[1].selected && jobFreq[1].checked) {
-        let resPriceEst = Math.floor((80 * 4.5) * .85);
+        let resPriceEst = Math.floor(70 * 4.5);
         resCost.textContent = resPriceEst;
     } else if (bdHomeSize[3].selected && resBath[0].selected && jobFreq[2].checked
       || bdHomeSize[3].selected && resBath[1].selected && jobFreq[2].checked) {
-        let resPriceEst = Math.floor((80 * 4.5) * .9);
+        let resPriceEst = Math.floor(80 * 4.5);
         resCost.textContent = resPriceEst;
     } else if (bdHomeSize[3].selected && resBath[0].selected && jobFreq[3].checked
       || bdHomeSize[3].selected && resBath[1].selected && jobFreq[3].checked) {
-        let resPriceEst = Math.floor(80 * 4.5);
+        let resPriceEst = Math.floor(90 * 4.5);
         resCost.textContent = resPriceEst;
 
     } else if (bdHomeSize[4].selected && resBath[0].selected && jobFreq[0].checked
       || bdHomeSize[4].selected && resBath[1].selected && jobFreq[0].checked) {
-        let resPriceEst = Math.floor((80 * 5.5) * .8);
+        let resPriceEst = Math.floor(60 * 5.5);
         resCost.textContent = resPriceEst;
     } else if (bdHomeSize[4].selected && resBath[0].selected && jobFreq[1].checked
       || bdHomeSize[4].selected && resBath[1].selected && jobFreq[1].checked) {
-        let resPriceEst = Math.floor((80 * 5.5) * .85);
+        let resPriceEst = Math.floor(70 * 5.5);
         resCost.textContent = resPriceEst;
     } else if (bdHomeSize[4].selected && resBath[0].selected && jobFreq[2].checked
       || bdHomeSize[4].selected && resBath[1].selected && jobFreq[2].checked) {
-        let resPriceEst = Math.floor((80 * 5.5) * .9);
+        let resPriceEst = Math.floor(80 * 5.5);
         resCost.textContent = resPriceEst;
     } else if (bdHomeSize[4].selected && resBath[0].selected && jobFreq[3].checked
       || bdHomeSize[4].selected && resBath[1].selected && jobFreq[3].checked) {
-        let resPriceEst = Math.floor(80 * 5.5);
+        let resPriceEst = Math.floor(90 * 5.5);
         resCost.textContent = resPriceEst;
 
     } else if (bdHomeSize[5].selected && resBath[0].selected && jobFreq[0].checked
       || bdHomeSize[5].selected && resBath[1].selected && jobFreq[0].checked) {
-        let resPriceEst = Math.floor((80 * 6.5) * .8);
+        let resPriceEst = Math.floor(60 * 6.5);
         resCost.textContent = resPriceEst;
     } else if (bdHomeSize[5].selected && resBath[0].selected && jobFreq[1].checked
       || bdHomeSize[5].selected && resBath[1].selected && jobFreq[1].checked) {
-        let resPriceEst = Math.floor((80 * 6.5) * .85);
+        let resPriceEst = Math.floor(70 * 6.5);
         resCost.textContent = resPriceEst;
     } else if (bdHomeSize[5].selected && resBath[0].selected && jobFreq[2].checked
       || bdHomeSize[5].selected && resBath[1].selected && jobFreq[2].checked) {
-        let resPriceEst = Math.floor((80 * 6.5) * .9);
+        let resPriceEst = Math.floor(80 * 6.5);
         resCost.textContent = resPriceEst;
     } else if (bdHomeSize[5].selected && resBath[0].selected && jobFreq[3].checked
       || bdHomeSize[5].selected && resBath[1].selected && jobFreq[3].checked) {
-        let resPriceEst = Math.floor(80 * 6.5);
+        let resPriceEst = Math.floor(90 * 6.5);
         resCost.textContent = resPriceEst;
     };
   });
@@ -143,106 +143,106 @@ moveBtn.addEventListener('click', () => {
     const mBath = document.querySelectorAll('.move-bath');
     const mjobFreq = document.querySelectorAll('.move-job-freq');
     const mCost = document.querySelector('.move-cost');
-    const mhrRate = 80;
+    const mhrRate = 90;
 
     if (mbdHomeSize[0].selected && mBath[0].selected && mjobFreq[0].checked
     || mbdHomeSize[0].selected && mBath[1].selected && mjobFreq[0].checked) {
-      let mPriceEst = Math.floor((80 * 1.5) * .8);
+      let mPriceEst = Math.floor(60 * 1.5);
       mCost.textContent = mPriceEst;
     } else if (mbdHomeSize[0].selected && mBath[0].selected && mjobFreq[1].checked
       || mbdHomeSize[0].selected && mBath[1].selected && mjobFreq[1].checked) {
-        let mPriceEst = Math.floor((80 * 1.5) * .85);
+        let mPriceEst = Math.floor(70 * 1.5);
         mCost.textContent = mPriceEst;
     } else if (mbdHomeSize[0].selected && mBath[0].selected && mjobFreq[2].checked
       || mbdHomeSize[0].selected && mBath[1].selected && mjobFreq[2].checked) {
-        let mPriceEst = Math.floor((80 * 1.5) * .9);
+        let mPriceEst = Math.floor(80 * 1.5);
         mCost.textContent = mPriceEst;
     } else if (mbdHomeSize[0].selected && mBath[0].selected && mjobFreq[3].checked
       || mbdHomeSize[0].selected && mBath[1].selected && mjobFreq[3].checked) {
-        let mPriceEst = Math.floor(80 * 1.5);
+        let mPriceEst = Math.floor(90 * 1.5);
         mCost.textContent = mPriceEst;
     } else if (mbdHomeSize[1].selected && mBath[0].selected && mjobFreq[0].checked
       || mbdHomeSize[1].selected && mBath[1].selected && mjobFreq[0].checked) {
-        let mPriceEst = Math.floor((80 * 2.5) * .8);
+        let mPriceEst = Math.floor(60 * 2.5);
         mCost.textContent = mPriceEst;
     } else if (mbdHomeSize[1].selected && mBath[0].selected && mjobFreq[1].checked
       || mbdHomeSize[1].selected && mBath[1].selected && mjobFreq[1].checked) {
-        let mPriceEst = Math.floor((80 * 2.5) * .85);
+        let mPriceEst = Math.floor(70 * 2.5);
         mCost.textContent = mPriceEst;
     } else if (mbdHomeSize[1].selected && mBath[0].selected && mjobFreq[2].checked
       || mbdHomeSize[1].selected && mBath[1].selected && mjobFreq[2].checked) {
-        let mPriceEst = Math.floor((80 * 2.5) * .9);
+        let mPriceEst = Math.floor(80 * 2.5);
         mCost.textContent = mPriceEst;
     } else if (mbdHomeSize[1].selected && mBath[0].selected && mjobFreq[3].checked
       || mbdHomeSize[1].selected && mBath[1].selected && mjobFreq[3].checked) {
-        let mPriceEst = Math.floor(80 * 2.5);
+        let mPriceEst = Math.floor(90 * 2.5);
         mCost.textContent = mPriceEst;
     } else if (mbdHomeSize[2].selected && mBath[0].selected && mjobFreq[0].checked
       || mbdHomeSize[2].selected && mBath[1].selected && mjobFreq[0].checked) {
-        let mPriceEst = Math.floor((80 * 3.5) * .8);
+        let mPriceEst = Math.floor(60 * 3.5);
         mCost.textContent = mPriceEst;
     } else if (mbdHomeSize[2].selected && mBath[0].selected && mjobFreq[1].checked
       || mbdHomeSize[2].selected && mBath[1].selected && mjobFreq[1].checked) {
-        let mPriceEst = Math.floor((80 * 3.5) * .85);
+        let mPriceEst = Math.floor(70 * 3.5);
         mCost.textContent = mPriceEst;
     } else if (mbdHomeSize[2].selected && mBath[0].selected && mjobFreq[2].checked
       || mbdHomeSize[2].selected && mBath[1].selected && mjobFreq[2].checked) {
-        let mPriceEst = Math.floor((80 * 3.5) * .9);
+        let mPriceEst = Math.floor(80 * 3.5);
         mCost.textContent = mPriceEst;
     } else if (mbdHomeSize[2].selected && mBath[0].selected && mjobFreq[3].checked
       || mbdHomeSize[2].selected && mBath[1].selected && mjobFreq[3].checked) {
-        let mPriceEst = Math.floor(80 * 3.5);
+        let mPriceEst = Math.floor(90 * 3.5);
         mCost.textContent = mPriceEst;
 
     } else if (mbdHomeSize[3].selected && mBath[0].selected && mjobFreq[0].checked
       || mbdHomeSize[3].selected && mBath[1].selected && mjobFreq[0].checked) {
-        let mPriceEst = Math.floor((80 * 4.5) * .8);
+        let mPriceEst = Math.floor(60 * 4.5);
         mCost.textContent = mPriceEst;
     } else if (mbdHomeSize[3].selected && mBath[0].selected && mjobFreq[1].checked
       || mbdHomeSize[3].selected && mBath[1].selected && mjobFreq[1].checked) {
-        let mPriceEst = Math.floor((80 * 4.5) * .85);
+        let mPriceEst = Math.floor(70 * 4.5);
         mCost.textContent = mPriceEst;
     } else if (mbdHomeSize[3].selected && mBath[0].selected && mjobFreq[2].checked
       || mbdHomeSize[3].selected && mBath[1].selected && mjobFreq[2].checked) {
-        let mPriceEst = Math.floor((80 * 4.5) * .9);
+        let mPriceEst = Math.floor(80 * 4.5);
         mCost.textContent = mPriceEst;
     } else if (mbdHomeSize[3].selected && mBath[0].selected && mjobFreq[3].checked
       || mbdHomeSize[3].selected && mBath[1].selected && mjobFreq[3].checked) {
-        let mPriceEst = Math.floor(80 * 4.5);
+        let mPriceEst = Math.floor(90 * 4.5);
         mCost.textContent = mPriceEst;
 
     } else if (mbdHomeSize[4].selected && mBath[0].selected && mjobFreq[0].checked
       || mbdHomeSize[4].selected && mBath[1].selected && mjobFreq[0].checked) {
-        let mPriceEst = Math.floor((80 * 5.5) * .8);
+        let mPriceEst = Math.floor(60 * 5.5);
         mCost.textContent = mPriceEst;
     } else if (mbdHomeSize[4].selected && mBath[0].selected && mjobFreq[1].checked
       || mbdHomeSize[4].selected && mBath[1].selected && mjobFreq[1].checked) {
-        let mPriceEst = Math.floor((80 * 5.5) * .85);
+        let mPriceEst = Math.floor(70 * 5.5);
         mCost.textContent = mPriceEst;
     } else if (mbdHomeSize[4].selected && mBath[0].selected && mjobFreq[2].checked
       || mbdHomeSize[4].selected && mBath[1].selected && mjobFreq[2].checked) {
-        let mPriceEst = Math.floor((80 * 5.5) * .9);
+        let mPriceEst = Math.floor(80 * 5.5);
         mCost.textContent = mPriceEst;
     } else if (mbdHomeSize[4].selected && mBath[0].selected && mjobFreq[3].checked
       || mbdHomeSize[4].selected && mBath[1].selected && mjobFreq[3].checked) {
-        let mPriceEst = Math.floor(80 * 5.5);
+        let mPriceEst = Math.floor(90 * 5.5);
         mCost.textContent = mPriceEst;
 
     } else if (mbdHomeSize[5].selected && mBath[0].selected && mjobFreq[0].checked
       || mbdHomeSize[5].selected && mBath[1].selected && mjobFreq[0].checked) {
-        let mPriceEst = Math.floor((80 * 6.5) * .8);
+        let mPriceEst = Math.floor(60 * 6.5);
         mCost.textContent = mPriceEst;
     } else if (mbdHomeSize[5].selected && mBath[0].selected && mjobFreq[1].checked
       || mbdHomeSize[5].selected && mBath[1].selected && mjobFreq[1].checked) {
-        let mPriceEst = Math.floor((80 * 6.5) * .85);
+        let mPriceEst = Math.floor(70 * 6.5);
         mCost.textContent = mPriceEst;
     } else if (mbdHomeSize[5].selected && mBath[0].selected && mjobFreq[2].checked
       || mbdHomeSize[5].selected && mBath[1].selected && mjobFreq[2].checked) {
-        let mPriceEst = Math.floor((80 * 6.5) * .9);
+        let mPriceEst = Math.floor(80 * 6.5);
         mCost.textContent = mPriceEst;
     } else if (mbdHomeSize[5].selected && mBath[0].selected && mjobFreq[3].checked
       || mbdHomeSize[5].selected && mBath[1].selected && mjobFreq[3].checked) {
-        let mPriceEst = Math.floor(80 * 6.5);
+        let mPriceEst = Math.floor(90 * 6.5);
         mCost.textContent = mPriceEst;
     };
   });

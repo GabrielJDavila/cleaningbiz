@@ -349,7 +349,7 @@ div.other-services-container {
 }
 
 .carousel-item {
-  height: 400px;
+  height: 300px;
   background: grey;
   padding: 1em;
   font-family: 'Nunito', sans-serif;
@@ -361,8 +361,33 @@ div.other-services-container {
   border-radius: 6px;
 }
 
+.gal-2-title {
+  display: none;
+}
+
 .carousel-item-selected {
   display: block;
+}
+
+.c-1 {
+  background-image: url(../img/gallery1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.c-2 {
+  background-image: url(../img/gallery2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.c-3 {
+  background-image: url(../img/gallery3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .carousel-nav {
@@ -997,6 +1022,27 @@ h3 {
     display: block;
   }
 
+  .c-1 {
+    background-image: url(../img/gallery1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .c-2 {
+    background-image: url(../img/gallery2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .c-3 {
+    background-image: url(../img/gallery3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
   .carousel-nav {
     width: 100%;
     padding: 20px 0;
@@ -1353,6 +1399,66 @@ h3 {
   .service-page-main {
     padding: 2em;
     padding-top: 0;
+  }
+
+  .hide-2 {
+    display: none;
+  }
+
+  /* .g-1,
+  .g-2,
+  .g-3 {
+    height: 300px;
+    background: grey;
+    padding: 1em;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+    color: white;
+    width: 100%;
+    border-radius: 6px;
+    display: block;
+  } */
+
+  .gal2-container {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .gal-2-title {
+    display: block;
+  }
+
+  .g-1,
+  .g-2,
+  .g-3 {
+    margin: 0 auto;
+    padding: 0 1em;
+    width: 300px;
+    height: 300px;
+    border: solid 1px black;
+  }
+
+  .g-1 {
+    background-image: url(../img/gallery1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .g-2 {
+    background-image: url(../img/gallery2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .g-3 {
+    background-image: url(../img/gallery3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
 
