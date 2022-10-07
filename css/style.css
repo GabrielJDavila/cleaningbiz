@@ -926,6 +926,13 @@ h3 {
 
   .what-we-can-do {
     font-size: 2em;
+    text-align: center;
+    margin-left: auto;
+  }
+
+  .wwcd-item {
+    text-align: center;
+    
   }
 
   /* service page styles start */
